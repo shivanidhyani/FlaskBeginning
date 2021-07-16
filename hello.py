@@ -9,7 +9,9 @@ class HelloCapgemini(Resource):
         pass
     
     def get(self):
-        return{"Hello Capgemini !"}
+        return{"Hello": "Capgemini !"}
+        
+api.add_resource(HelloCapgemini, '/')
 
-    if __name__ == "__main__":
-        app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
